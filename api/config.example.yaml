@@ -1,0 +1,26 @@
+llm_config:
+  base_url: https://api.deepseek.com/
+  api_key: your_api_key_here
+  model_name: deepseek-reasoner
+  temperature: 0.7
+  max_tokens: 8192
+
+agent_config:
+  max_iterations: 100
+  max_retries: 3
+  max_search_results: 10
+
+mcp_config:
+  mcpServers:
+    example-server:
+      transport: streamable_http
+      enabled: false
+      description: Example MCP server
+      env: null
+      command: null
+      args: null
+      url: https://example.com/mcp
+      headers: null
+
+a2a_config:
+  a2a_servers: []
